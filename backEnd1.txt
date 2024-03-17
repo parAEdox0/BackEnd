@@ -13,3 +13,29 @@ How Internet works? A playful example
     -> Those packets are then converted into electrical signals by the network tower 
     -> These electrical signals travel wired of wirelessly from optical fibres to the nearest network tower of the reciever
     -> After the tower of the destined reciepient recieves the electrical signal it then coverts the electrical signals back to packets and these packets are received by the recievers phone and thus the message is now received by your friend.
+
+Router, IP Adress and MAC Adress 
+
+    -> A router is a networking device that forwards data packets between computer networks. It operates at the network layer of the OSI model and is responsible for directing traffic on the internet or within a private network.
+    -> Both MAC Address and IP Address are used to uniquely define a device on the internet. NIC Card’s Manufacturer provides the MAC Address, on the other hand, Internet Service Provider provides IP Address. 
+    -> A NIC is a hardware component installed in a computer or device to connect it to a local area network (LAN) or the internet. It provides a physical interface for transmitting and receiving data over the network medium, such as Ethernet cables or Wi-Fi signals.
+    -> ISP stands for Internet Service Provider. An ISP is a company that provides individuals and businesses with access to the internet and related services.
+    -> MAC addresses are hardware-based addresses that are permanently assigned to the network interface card by the manufacturer. They are used for communication within the same local network segment and do not change, regardless of where the device is connected.
+    -> IP addresses, on the other hand, are logical addresses assigned to devices by the network administrator or ISP. They are used for communication across different networks, including the internet. IP addresses are used for identifying devices on a network and routing data packets between different networks. They are essential for internet communication, enabling devices to communicate across the global network. IP addresses may change if a device moves to a different network or if the network configuration is updated.
+
+Server and Client
+
+    -> Server is a computer which is connected to the internet and is programmed to receive requests and give back to the client who requested it
+    -> There are various types of servers each serving specific purposes for example web servers, email servers, file servers, database servers etc.
+    -> client is a person or agency which makes a request for any specific data to any kind of servers
+
+HTTP and HTTPS
+
+    -> HTTP is hyper text transfer protocol
+    -> HTTPS is hyper text transfer protocol secured
+    -> Used for transmitting data over the internet
+    -> HTTP is the foundation of data communication on the World Wide Web. It defines how web browsers and web servers communicate with each other
+    -> When you type a URL into your web browser and hit Enter, the browser sends an HTTP request to the web server hosting the requested web page. The server processes the request and sends back an HTTP response containing the requested web page's content.
+    -> HTTP does not provide any encryption or security measures, making it susceptible to eavesdropping and tampering. As a result, data transmitted over HTTP is not secure and can be intercepted by attackers.
+    -> HTTPS is a secure version of HTTP that adds encryption and authentication mechanisms to ensure secure communication between clients and servers over the internet.
+    -> HTTPS provides end-to-end encryption, ensuring that data transmitted between the client and server is protected from interception and tampering. It also verifies the authenticity of the server through digital certificates, preventing man-in-the-middle attacks.
