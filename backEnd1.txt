@@ -1,0 +1,15 @@
+Back End Developement
+
+    -> Backend development involves creating and maintaining the server-side components of web applications, including server-side logic, databases, and APIs, to handle data processing, authentication, and server management.
+    
+What is Internet?
+
+    -> The internet is a global network of interconnected computers and devices that communicate with each other using standardized protocols.
+    -> It enables the exchange of data and information across vast distances, allowing users to access resources, communicate with others, and interact with various online services.
+
+How Internet works? A playful example
+
+    -> Suppose you have sent a message to your friend residing in USA, that message or that data will be received by your nearest network tower in the form of packets which are emitted from your phone
+    -> Those packets are then converted into electrical signals by the network tower 
+    -> These electrical signals travel wired of wirelessly from optical fibres to the nearest network tower of the reciever
+    -> After the tower of the destined reciepient recieves the electrical signal it then coverts the electrical signals back to packets and these packets are received by the recievers phone and thus the message is now received by your friend.
