@@ -14,5 +14,5 @@ module.exports = a;
 
 file2.js 
 
-let imported = require(file1.js)
+let imported = require(file1 relative path)
 console.log(imported)
