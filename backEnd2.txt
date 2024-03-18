@@ -1,0 +1,18 @@
+import and export in js
+
+-> to export a variable to another js file we have to use 
+-> module.exports = variable name
+-> to import the exported variable we have to use 
+-> require(filename of the exported file)
+
+example 
+
+file1.js
+
+let a = 10;
+module.exports = a;
+
+file2.js 
+
+let imported = require(file1.js)
+console.log(imported)
