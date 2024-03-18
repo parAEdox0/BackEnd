@@ -1,0 +1,11 @@
+Node.js 
+
+ -> Node.js is a runtime environment built on the V8 JavaScript engine of chrome browser which were made by google to run javascript on browser.
+ -> Node.js allows developers to execute JavaScript code outside of web browsers
+ -> The core of v8 engine is written in c++ however we interact with node.js using javascript that is because the core c++ code of the v8 engine is wrapped with javascript code for us to inteact with it using javascript
+
+npm 
+
+ -> npm was initially called as 'node package manager' because npm used to contain various packages related to node
+ -> Now npm does not contain only node packages but various packages of vaious different domains, thus it is no more called as node package manager
+ -> Packages can be said as files of code which are already written and we can make use of it
