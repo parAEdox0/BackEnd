@@ -43,3 +43,29 @@ Template engines
   using following syntax
   <%= name%>
   we cannot do this using html thus we use ejs
+
+Static files 
+
+ ->Setting up images, stylesheets, frontend, js
+ ->To setup
+   -create a folder public
+   -create three folders inside it
+      images
+      stylesheets
+      javascripts
+   -configure the express static in script.js
+   -understand the path
+
+Error handling in express 
+
+ ->Used when we have to show a error 
+ ->Example code
+  function errorHandler (err, req, res, next) {
+    if (res.headersSent) {
+      return next(err)
+    }
+    res.status(500)
+    res.render('error', { error: err })
+  }
+
+   
