@@ -24,3 +24,22 @@ Dynamic routing and route parameters
   ->Thus we cannot create a separate route for all the different users so we use dynammic routing as follows
   /profile/:username 
   here username can be named anything 
+
+Template engines 
+
+ ->Template engines are markup styles which is later converted into html
+
+ ->There are various template engines but the one we are gonna use is ejs
+ ->ejs is html with superpower like you can do calculations and write javascript within it
+ ->To setup ejs
+   npm i ejs
+   configure ejs => app.set("view engine", ejs);
+   make views folder
+   make ejs files in it
+   use render instead of send
+
+ ->After render("filename without .ejs", {name: "parth"})
+  in the above example after the file name i have passed a data for name value to be equal to parth now in my ejs file wherever there is name written i have a option to change it to its data
+  using following syntax
+  <%= name%>
+  we cannot do this using html thus we use ejs
