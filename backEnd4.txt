@@ -1,0 +1,26 @@
+More on Express.js
+
+ ->Node.js can run without Express.js but Express.js cannot run without Node.js
+ ->Server has potential to do a lot of thing, such as routing, handling requests, sending responses and a lot more
+ ->By using express.js we can write codes to use the server features
+ ->We can also use these server features without using express by using HTTP package of node but it is way too complicated so to simplify thing we use express to use the functionality of server
+ ->Express also uses HTTP package from node.js in backend
+
+res, req, next
+
+ ->res is short for Response in which the data about what server is going to send is stored for example a request demanded some data and we can send that data by using res
+ ->req is short for Request in which data of the user who send the request is stored
+ ->next is used in a middleware function as once the control goes to the middleware function it cannot go to the next route by itself thus we use next() to push the flow to the next route
+
+Dynamic routing and route parameters 
+
+ ->If in your routes some part is always same and some part of the routes is always changing 
+ ->Example
+   /profile/parth
+   /profile/parthiv
+   /profile/prithvi
+   /profile/popat
+  ->In the above routing example /profile part is always same and after that it is always changing
+  ->Thus we cannot create a separate route for all the different users so we use dynammic routing as follows
+  /profile/:username 
+  here username can be named anything 
