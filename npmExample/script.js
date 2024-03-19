@@ -3,6 +3,8 @@
 //usage guide is give on the site
 //In this case we are installing figlet
 
+
+// npm i figlet
 var figlet = require("figlet");
 
 figlet("HAHAHA", function (err, data) {
