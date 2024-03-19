@@ -9,3 +9,49 @@ npm
  -> npm was initially called as 'node package manager' because npm used to contain various packages related to node
  -> Now npm does not contain only node packages but various packages of vaious different domains, thus it is no more called as node package manager
  -> Packages can be said as files of code which are already written and we can make use of it
+
+
+Express 
+
+ -> Express is a framework for Node.js
+ -> A framework is a reuable set of libraries or set of tools that provides a foundation for developing software applications
+ -> A framework offers a structured starting point with essential tools to start building any software application
+ -> Express.js provides a set of libraries for building web applications, including features like routing, middleware support, and request handling to Node.js
+
+
+Routing 
+
+ -> Routing in Express.js directs incoming HTTP requests to the correct handlers based on their URLs and HTTP methods.
+ -> A handler is a function that performs a specific action in response to an incoming HTTP request.
+ For example
+ http://www.facebook.com/profile will direct us to the profile of the user
+ -> In the above example /profile was the route 
+
+GET and POST route
+
+ GET Route:
+  ->Used for requesting data from a server.
+  ->Typically used for fetching resources or data.
+  ->Examples include fetching a webpage, retrieving user information, or accessing public data.
+
+ POST Route:
+  ->Used for submitting data to a server to create or update a resource.
+  ->Typically used for creating or updating resources, submitting forms, or uploading files.
+  ->Examples include submitting a login form, creating a new user account, or adding a comment to a post.
+
+ ->The HTTP POST method is typically used for sending sensitive data such as usernames and passwords because it allows the data to be sent in the request body, which is not visible in the URL like with the GET method.
+
+ ->Nodemon is a utility tool for Node.js that helps developers automatically restart their Node.js 
+
+Middleware 
+ 
+ ->Middleware is a function which is executed before any routing
+ ->For example you have /profile route besides your / route now before executing the code where site redirects you to /profile i.e before routing middleware is executed
+ ->You can define middleware with 
+ ->app.use(function (res, req, next){
+    //code to execute in middleware
+ })
+ here app is a variable which contains express
+ ->Middleware is executed before every routing
+ ->next(); method is used in middleware to take the flow to the route from middleware
+ ->middleware is executed even before the execution of slash route
