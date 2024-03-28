@@ -1,0 +1,8 @@
+express generator 
+
+ -> express generator makes a folder for us, express generator includes every files in that folder 
+ -> steps to use
+    -install it globally npm i express-generator -g
+    -to create a new app anywhere open terminal go to the desire folder and run the command express appname --view=ejs
+    -cd appname
+    -npm i 
