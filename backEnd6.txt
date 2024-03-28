@@ -1,0 +1,63 @@
+database
+
+ ->database is a collection of data of any kind
+ ->there are two types of databases
+   - relational -> sql/mySql
+   - non relational -> mongoDb
+
+ ->mongoDb
+
+    database Setup(code) => database Formation(db)
+    model(code) => collection(db)
+    schema(code) => documents(db)
+
+    collections are the parts of the database for example we have amazon database and in it there are various parts of that database for example user data, admin data, product data etc these parts are called as collections and is made using coding models
+
+    and in one collection there are multiple elements for example user collection has various users 
+
+    each user from the collection is called as documents in db
+
+    steps
+     -install mongoDb 
+     -install mongoose (npm i mongoose)
+     -connect
+       const mongoose = require("mongoose");
+
+      //creates database
+      mongoose.connect("mongodb://127.0.0.1:27017/database");
+
+      //creates document for each module of collection
+      const userSchema = mongoose.Schema({
+        username: String,
+        name: String,
+        age: Number
+      })
+
+      //creates collection mongoose.model(collection name, schema)
+      module.exports = mongoose.model("user", userSchema);
+
+
+cookie and session
+
+ -> cookie and session both are data
+ -> if data is stored in client i.e. browser it is called       as cookie
+ -> if it is stored in server it is called as session
+
+ -> to use session
+    -install (npm i express-session)
+    -sessions is written in app.js
+    -(const session = require("express-session"))
+    -(app.use(session)({
+      resave: false,
+      saveUninitialized: false,
+      secret: "anythingRandom"
+    }))
+
+    -create
+     req.session.koibhinaam = koibhivalue;
+
+    -read
+     req.session.koibhinaam
+
+    -delete
+     req.session.destroy
