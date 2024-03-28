@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const mongoose = require("mongoose");
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+//creates database
+mongoose.connect("mongodb://127.0.0.1:27017/database");
 
-module.exports = router;
+//creates document for each module of collection
+const userSchema = mongoose.Schema({
+  username: String,
+  name: String,
+  age: Number
+})
+
+//creates collection mongoose.model(collection name, schema)
+module.exports = mongoose.model("user", userSchema);
