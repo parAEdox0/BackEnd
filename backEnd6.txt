@@ -61,3 +61,15 @@ cookie and session
 
     -delete
      req.session.destroy
+
+
+-> to use cookie
+   cookie-parser (already installed by express-generator)
+   to create the cookie
+    -res.cookie(naam, value)
+
+   to view the cookie 
+    -console.log(req.cookies)
+
+   to delete the cookie
+    -res.clearCookie(value)
