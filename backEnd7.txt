@@ -1,0 +1,16 @@
+flash messages 
+
+ -> Whenever we want to provide a message or information or error of any kind on an ejs page we use flash messages
+    they can be alerts, warning, messages 
+
+ -> example
+    the warning we get if we enter wrong credentials while logging in on any website
+
+ install connect-flash (npm i connect-flash)
+
+ CANNOT USE CONNECT_FLASH WITHOUT CREATING A EXPRESS SESSION
+
+ put connect-flash in app.use function
+
+
+ -> flash message allows us to use the data created in a specific route to any of the other route which is not possible otherwise
